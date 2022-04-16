@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/625a6b34a2776818a727ed2d
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name" : "ayub aja",
+    "email" : "ayubbkj2@gmail.com",
+    "gender" : "man"
+}
+
+###
+PATCH  http://localhost:3000/users/625a6b34a2776818a727ed2d
+Content-Type: application/json
+
+{
+    "name" : "ayub ganti",
+    "email" : "ayubbkj@gmail.com",
+    "gender" : "male"
+}
+
+###
+DELETE  http://localhost:3000/users
