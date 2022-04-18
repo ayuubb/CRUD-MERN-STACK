@@ -1,10 +1,10 @@
-GET http://localhost:3000/users
+GET http://localhost:5000/users
 
 ###
-GET http://localhost:3000/users/625a6b34a2776818a727ed2d
+GET http://localhost:5000/users/625a6b34a2776818a727ed2d
 
 ###
-POST http://localhost:3000/users
+POST http://localhost:5000/users
 Content-Type: application/json
 
 {
@@ -14,14 +14,14 @@ Content-Type: application/json
 }
 
 ###
-PATCH  http://localhost:3000/users/625a6b34a2776818a727ed2d
+PATCH  http://localhost:5000/users/625a6e56e1a8ae3c2005bb03
 Content-Type: application/json
 
 {
-    "name" : "ayub ganti",
+    "name" : "ayub ganti 2",
     "email" : "ayubbkj@gmail.com",
     "gender" : "male"
 }
 
 ###
-DELETE  http://localhost:3000/users
+DELETE  http://localhost:5000/users

@@ -4,7 +4,7 @@ import cors from 'cors';
 import UserRoot from './routes/UserRoute.js';
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 mongoose.connect('mongodb://localhost:27017/crudmren_db', {
   useNewUrlParser: true,
