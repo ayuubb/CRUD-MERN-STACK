@@ -1,10 +1,19 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserList from 'components/UserList';
+import AddUser from 'components/AddUser';
+import EditUser from 'components/EditUser';
 
 function App() {
   return (
-    <div className="container">
-      <UserList></UserList>
-    </div>
+    <BrowserRouter>
+      <div className="container is-flex is-justify-content-center is-align-items-center mt-6">
+        <Routes>
+          <Route path="/" element={<UserList />} />
+          <Route path="/add" element={<AddUser />} />
+          <Route path="/edit/:id" element={<EditUser />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
