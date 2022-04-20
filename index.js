@@ -17,9 +17,10 @@ const db = mongoose.connection;
 db.on('error', (error) => console.log(error));
 db.once('open', () => console.log('database Conected...'));
 
+app.use(UserRoot);
+
 app.use(cors());
 app.use(express.json());
-app.use(UserRoot);
 
 // if (process.env.NODE_DEV === 'production') {
 //   app.use(express.static('client/build'));
